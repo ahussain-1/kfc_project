@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* 
 #Nav_Bar{
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -33,7 +33,7 @@
 display: flex;
 justify-content: space-between;
 background-color: rgb(255, 255, 255);
-/* border: 1px solid black; */
+border: 1px solid black;
 }
 #main_HeadingName{
     font-size: 20px;
@@ -43,7 +43,7 @@ background-color: rgb(255, 255, 255);
 nav {
 display: flex;
 align-items: end;
-/* border:2px solid; */
+border:2px solid;
 justify-content: space-evenly;
 width: 90vh;
 height: 5vh;
@@ -107,10 +107,125 @@ padding-bottom: 0.8em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 5vh;
     border: none;
+} */
+
+nav{
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#logo{
+    margin-left: 3%;
+    height: 30px;
+}
+.links-container{
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+} */
+
+#nav_searchIcon{
+    height:25px;
+    width: 25px;
+    margin-left: 10em;
+}
+#usercircle{
+    height: 30px;
+}
+#bag{
+    height: 30px;
+}
+
+nav svg{
+    fill: black;
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button{
+    padding:0 20px;
+    display: none;
+}
+.close-sidebar-button{
+    display: none;
 }
 
 
- 
+
+.ancLink{
+    text-decoration: none;
+    color: black;
+    margin-right: 0;
+    font-weight:500;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ancLink:hover {
+    color: #ffffff;
+    background-color: red;
+}
+
+#users_right_section{
+    display: flex;
+    /* border:1px solid black; */
+    justify-content: space-around;
+    width: 30vw;
+}
+.users_rs1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 10vw;
+    height: auto;
+}
+#person_circle,#bag{
+    height:30px;
+}
+
+.header_button{
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_button button{
+    color: #ffffff;
+    background-color:#E4002B;
+    width: 11vw;
+    border-radius: 2em;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 5vh;
+    border: none;
+}
+
+
+
+
+
+
 #location_icon{
     height: 2vh;
     width: 2vh;
@@ -126,7 +241,9 @@ padding-bottom: 0.8em;
     background-color: #202124;
     color: white;
     width: 100%;
-    height: 6.5vh;
+    padding: 1%;
+    box-sizing: border-box;
+    height: auto;
 }
 .Home_hero_media{
     background-image: url('tempting\ chicken.jpeg');
@@ -279,6 +396,7 @@ padding-bottom: 0.8em;
     gap: 20px;
     margin-top: 2%;
     
+    
  
     box-sizing: border-box;
       
@@ -321,6 +439,11 @@ padding-bottom: 0.8em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#head_line_logo{
+    height: 8vh;
+    width: 15vw;
+
 }
 #headlines{
     height: 60vh;
@@ -457,13 +580,14 @@ width: 40%;
     gap: 5px;
 }
 .footer_nav div{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     font-family: Arial, Helvetica, sans-serif;
     color: #f7f8f5;
     font-size: 12px;
     font-weight: bold;
     padding-left: 5%;
-    background-color: #000000;
+    background-color: #202124;
+    box-shadow: 0px 4px 4px 0px #494949;
 }
 .footer_nav div p{
     margin-top: 10%;
@@ -484,10 +608,14 @@ width: 40%;
     color: #f8f7f5;
 }
 
-
+#img_foot{
+    padding:10%;
+    box-sizing: border-box;
+}
 #img_foot img{
-    height: 50%;
+    height: 40%;
     width: 100%;
+    margin-top:50%;
 }
 .footer_last{
     margin-top: 10%;
@@ -549,7 +677,47 @@ ul{
     display: none;
 }
 
-@media(max-width:600px){
+#burger_sec{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: none;
+}
+#name_kfc_container{
+    height: auto;
+    width: 20vw;
+    padding: 2%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    display: flex;
+    display: none;
+}
+#name_kfc{
+    height: 100%;
+}
+#icons_three{
+    display: flex;
+    height:auto;
+    width: 25vw;
+    align-items: center;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    display: none;
+}
+#findIcon{
+    height: 25px;
+    width: 25px;
+}
+#userIcon,#cartIcon{
+    height: 25px;
+}
+
+
+
+
+/* @media(max-width:600px){
     #pickup_button{
         width: 100%;
         box-sizing: border-box;
@@ -636,13 +804,13 @@ ul{
         width: 100%;
         gap: 20px;
         justify-content: space-evenly;
-        /* padding-left: 8%;
-        padding-right: 8%; */
+        padding-left: 8%;
+        padding-right: 8%;
         padding: 8%;
-        /* margin-top: 2%; */
+        margin-top: 2%;
         margin: 5%;
         box-sizing: border-box;
-        /* border:2px solid rgb(255, 0, 0); */
+        border:2px solid rgb(255, 0, 0);
         background-color: #ffffff;
     }
     .sub_items{
@@ -651,13 +819,13 @@ ul{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* border:1px solid black; */
+        border:1px solid black;
         box-sizing: border-box;
     }
     .food_img_container{
         height:auto;
         width:auto;
-        /* border: 1px solid black; */
+        border: 1px solid black;
         box-sizing: border-box;
     }
 
@@ -753,11 +921,11 @@ ul{
     #headlines{
         height: 40vh;
         width: 100%;
-        /* border: 3px solid rgb(0, 0, 0); */
+        border: 3px solid rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border: 2px blue; */
+        border: 2px blue;
         justify-content: center;
     }
     #headlines h1 {
@@ -768,10 +936,10 @@ ul{
     #headlines p{
         font-size: 28px;
         text-align: center;
-        /* font-weight: bold; */
+        font-weight: bold;
         color: #ffffff;
         font-family: sans-serif;
-        /* margin: auto; */
+        margin: auto;
     }
     #bold{
         font-weight: bolder;
@@ -818,7 +986,7 @@ ul{
         margin-top: 5%;
         margin-left: 6%;
         box-sizing: border-box;
-        /* font-size: 25px; */
+        font-size: 25px;
         border: 1px solid black;
     
     }
@@ -973,9 +1141,171 @@ ul{
         color: #f8f7f5;
         justify-content: flex-start;
     }
-}
+} */
 
-@media (min-width:601px) and (max-width:900px){
+@media (min-width:769px) and (max-width:1279px){
+    /* #pickup_button{
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        
+    } */
+
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right:-100%;
+        z-index: 10;
+        width: 300px;
+        background-color: #ffffff;
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        transition: 0.75s ease-out;
+    }
+     .ancLink{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button{
+        padding: 20px;
+        display: block;
+    }
+    .close-sidebar-button{
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+       right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 9;
+    }
+    #logo{
+        display: none;
+    }
+    #nav_searchIcon{
+        display: none;
+    }
+    .header_button{
+        display: none;
+    }
+    #person_circle,#bag{
+        display: none;
+    }
+    #burger_sec{
+        height:100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: cornflowerblue; */
+        box-sizing: border-box;
+    }
+    #name_kfc_container{
+        height: auto;
+        width: 20vw;
+        padding: 2%;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+        display: flex;
+    }
+    #icons_three{
+        display: flex;
+        height:auto;
+        width: 25vw;
+        align-items: center;
+        /* border: 1px solid black; */
+        justify-content: space-around;
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .Home_hero_media{
+        background-image: url('k111-transformed.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: auto;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    #Bannertext{
+        color:   rgba(255, 255, 255, 0.801);
+        margin-left: 5%;
+        font-size: larger;
+    }
+    #Banner_btn{
+        margin-top: 3%;
+        width:auto;
+        height: auto;
+        font-weight: bold;
+        border-radius: 2em;
+        background-color: #E4002B;
+        color: #ffffff;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+
+    .Home_hero_footnote{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #202124;
+        color: #ffffff;
+        width: auto;
+        font-size: 9px;
+        padding: 2%;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: auto;
+    }
+    #a_footnote{
+        font-size: 9px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+
+
+
     .menu_header{
         display: flex;
         justify-content: space-between;
@@ -988,7 +1318,6 @@ ul{
         padding-right: 5%; 
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         box-sizing: border-box;
-    
     }
     #menu_header_Atag{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
